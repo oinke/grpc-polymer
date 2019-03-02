@@ -6,6 +6,13 @@ module.exports = {
       watch: true,
       exec_mode: 'cluster',
       instances: 2,
+    },
+    {
+      name: 'grpc-server',
+      script: 'server.js',
+      watch: true,
+      exec_mode: 'cluster',
+      instances: 2,
     }],
   };
   

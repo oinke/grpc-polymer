@@ -15,6 +15,7 @@
     "webpack": "npx webpack --config webpack.config.js"
   },
   "dependencies": {
+    "@grpc/proto-loader": "^0.4.0",
     "@polymer/app-layout": "^3.0.0-pre.15",
     "@polymer/app-route": "^3.0.0-pre.15",
     "@polymer/iron-flex-layout": "^3.0.0-pre.15",
@@ -26,6 +27,7 @@
     "@polymer/polymer": "^3.0.0",
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "google-protobuf": "^3.7.0-rc.3",
+    "grpc": "^1.18.0",
     "grpc-web": "^1.0.3",
     "prpl-server": "^1.4.0",
     "webpack": "^4.29.6",
