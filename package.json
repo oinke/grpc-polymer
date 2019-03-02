@@ -6,7 +6,7 @@
   "license": "BSD-3-Clause",
   "repository": "Polymer/polymer-starter-kit",
   "scripts": {
-    "start": "polymer serve",
+    "start": "cd build && prpl-server --root . --port 8090 --config polymer.json && cd ../",
     "build": "polymer build",
     "lint": "polymer lint",
     "test": "polymer test",
@@ -27,6 +27,7 @@
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "google-protobuf": "^3.7.0-rc.3",
     "grpc-web": "^1.0.3",
+    "prpl-server": "^1.4.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
   },
