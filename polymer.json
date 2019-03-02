@@ -1,8 +1,12 @@
 {
   "entrypoint": "index.html",
   "shell": "src/my-app.js",
+  "autoBasePath": true,
   "sources": [
     "images/**/*"
+  ],
+  "fragments": [
+    "grpc.js"
   ],
   "extraDependencies": [
     "manifest.json",
