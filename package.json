@@ -13,8 +13,8 @@
     "test:integration": "polymer build # test that psk builds without error with the CLI",
     "protoc": "protoc -I=. proto/helloworld.proto --js_out=import_style=commonjs:. --grpc-web_out=import_style=commonjs,mode=grpcwebtext:.",
     "webpack": "npx webpack --config webpack.config.js",
-    "dockerBuild": "docker build -t polymer/envoy -f ./envoy.Dockerfile .",
-    "dockerRun": "docker run -d -p 8080:8080 --network=host polymer/envoy"
+    "dockerBuild": "docker build -t helloworld/envoy -f ./envoy.Dockerfile .",
+    "dockerRun": "docker run -d -p 8080:8080 helloworld/envoy"
   },
   "dependencies": {
     "@grpc/proto-loader": "^0.4.0",
