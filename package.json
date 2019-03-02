@@ -11,7 +11,7 @@
     "lint": "polymer lint",
     "test": "polymer test",
     "test:integration": "polymer build # test that psk builds without error with the CLI",
-    "protoc": "protoc -I=. protoBuffers/helloworld.proto --js_out=import_style=commonjs:. --grpc-web_out=import_style=commonjs,mode=grpcwebtext:.",
+    "protoc": "protoc -I=. proto/helloworld.proto --js_out=import_style=commonjs:. --grpc-web_out=import_style=commonjs,mode=grpcwebtext:.",
     "webpack": "npx webpack --config webpack.config.js"
   },
   "dependencies": {

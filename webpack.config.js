@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './protoBuffers/client.js',
+  entry: './proto/client.js',
   output: {
     filename: 'grpc.js',
     path: path.resolve(__dirname, ''),
