@@ -11,6 +11,8 @@ var packageDefinition = protoLoader.loadSync(
      oneofs: true
     });
 
+var protoDescriptor = grpc.loadPackageDefinition(packageDefinition);
+var helloworld = protoDescriptor.helloworld;
 
 function doSayHello(call, callback) {
   callback(null, {
@@ -20,7 +22,7 @@ function doSayHello(call, callback) {
 
 function getServer() {
   var server = new grpc.Server();
-  server.addService(grpc.loadPackageDefinition(packageDefinition).helloworld.Greeter.service, {
+  server.addService(helloworld.Greeter.service, {
     sayHello: doSayHello,
   });
   return server;
